@@ -11,11 +11,17 @@
     <color name="textbg">#8F9AA8</color>
 
     <color name="tab_unselect">#c9c9c9</color>
-
     <color name="histogram_top">#5F9DFF</color>
     <color name="histogram_bottom">#0F74F0</color>
-
     <color name="chart_bg_color"> #212531</color>
+    <color name="bg_fragment">#F2F2F2</color>
+
+    <color name="bg_blue">#3986FF</color>
+    <color name="bg_receipt">#48EAC7</color>
+    <color name="bg_cancel">#F78A7A</color>
+    <color name="bg_yellow">#FDC243</color>
+
+
 
 
 

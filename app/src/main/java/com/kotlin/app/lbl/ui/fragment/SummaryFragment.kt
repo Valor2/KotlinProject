@@ -45,11 +45,13 @@ class SummaryFragment : BaseMainFragmet() {
         weekFragment.arguments = weekBundle
 
         var char1Fragment: Chart1Fragment = Chart1Fragment()
+//        var char1Fragment: ChartFragment = ChartFragment()
         var char1bundle = Bundle()
         char1bundle.putString("strategy", STRATEGY[1])
         char1Fragment.arguments = char1bundle
 
         var char2Fragment: Chart2Fragment = Chart2Fragment()
+//        var char2Fragment: ChartFragment = ChartFragment()
         var char2bundle = Bundle()
         char2bundle.putString("strategy", STRATEGY[2])
         char2Fragment.arguments = char2bundle

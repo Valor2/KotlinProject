@@ -6,4 +6,27 @@
     <dimen name="text_margin">16dp</dimen>
     <dimen name="bottombar_height">48dp</dimen>
     <dimen name="bottombar_wechat_height">52dp</dimen>
+
+    <dimen name="zero">0dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="six">6dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="nine">9dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="left_space">14dp</dimen>
+    <dimen name="right_space">14dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="thirty_six">36dp</dimen>
+    <dimen name="thirty_six_tow">34dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="forty_eight">48dp</dimen>
+    <dimen name="layout_setting_height">52dp</dimen>
+    <dimen name="fifty_six">56dp</dimen>
+    <dimen name="personal_data_item_height">48dp</dimen>
 </resources>

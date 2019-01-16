@@ -6,10 +6,171 @@
              android:background="@color/chart_bg_color"
              tools:context=".ui.fragment.viewpage.ChartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+
+        <!-- TODO: Update blank fragment layout -->
+        <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_width="250dp"
+                android:layout_centerVertical="true"
+                android:layout_height="250dp"
+                android:layout_above="@+id/seekBar1"/>
+
+        <LinearLayout android:layout_width="250dp"
+                      android:orientation="vertical"
+                      android:layout_toRightOf="@+id/chart1"
+                      android:layout_centerVertical="true"
+                      android:gravity="center"
+                      android:layout_height="250dp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/fifteen"
+                      android:text="1月11日 9:00-19:00"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/fifteen"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/nine"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+                <ImageView
+                        android:id="@+id/img_chart"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bg_blue"/>
+
+                <TextView
+                        android:id="@+id/tv_chart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ten"
+                        android:textColor="@color/white"
+                        android:layout_toRightOf="@+id/img_chart"
+                        android:textSize="@dimen/fifteen"
+                        android:text="揽收量:"/>
+
+                <TextView
+                        android:id="@+id/tv_chart_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/ten"
+                        android:textSize="@dimen/fifteen"
+                        android:layout_toRightOf="@+id/tv_chart"
+                        android:text="123"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/nine"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/eight"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+                <ImageView
+                        android:id="@+id/img_chart1"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bg_receipt"/>
+
+                <TextView
+                        android:id="@+id/tv_chart1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ten"
+                        android:textColor="@color/white"
+                        android:layout_toRightOf="@+id/img_chart1"
+                        android:textSize="@dimen/fifteen"
+                        android:text="回单量:"/>
+
+                <TextView
+                        android:id="@+id/tv_chart_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/ten"
+                        android:textSize="@dimen/fifteen"
+                        android:layout_toRightOf="@+id/tv_chart1"
+                        android:text="123"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/nine"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/eight"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+                <ImageView
+                        android:id="@+id/img_chart2"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bg_cancel"/>
+
+                <TextView
+                        android:id="@+id/tv_chart2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ten"
+                        android:textColor="@color/white"
+                        android:layout_toRightOf="@+id/img_chart2"
+                        android:textSize="@dimen/fifteen"
+                        android:text="取消量:"/>
+
+                <TextView
+                        android:id="@+id/tv_chart_number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/ten"
+                        android:textSize="@dimen/fifteen"
+                        android:layout_toRightOf="@+id/tv_chart2"
+                        android:text="123"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/nine"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/eight"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+                <ImageView
+                        android:id="@+id/img_chart3"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/bg_yellow"/>
+
+                <TextView
+                        android:id="@+id/tv_chart3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ten"
+                        android:textColor="@color/white"
+                        android:layout_toRightOf="@+id/img_chart3"
+                        android:textSize="@dimen/fifteen"
+                        android:text="爽约量:"/>
+
+                <TextView
+                        android:id="@+id/tv_chart_number3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/ten"
+                        android:textSize="@dimen/fifteen"
+                        android:layout_toRightOf="@+id/tv_chart3"
+                        android:text="123"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
 </FrameLayout>
