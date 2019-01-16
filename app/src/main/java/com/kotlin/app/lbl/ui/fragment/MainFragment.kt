@@ -42,7 +42,7 @@ class MainFragment : BaseMainFragmet() {
 
 
     override  fun initView() {
-        mFragmet = Array(4,{ SupportFragment() })
+        mFragmet = Array(4, { SupportFragment() })
         vibrator = _mActivity.getSystemService(Service.VIBRATOR_SERVICE) as Vibrator
 
         bottomBar.addItem(BottomBarTab(_mActivity, R.mipmap.icon_home, getString(R.string.home)))
