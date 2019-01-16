@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KotlinDemo</string>
+
+    <string name="press_again_exit">在按一次退出</string>
+    <string name="Interaction">互动</string>
+    <string name="wallet">钱包</string>
+    <string name="personal">个人中心</string>
+    <string name="home">首页</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

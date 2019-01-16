@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.fragment.CircularViewFragment">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/seekBar1"/>
+
+        <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"
+                android:layout_marginRight="5dp"
+                android:max="200"
+                android:visibility="invisible"
+                android:paddingBottom="12dp"/>
+
+        <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/seekBar2"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="35dp"
+                android:visibility="invisible"
+                android:layout_marginRight="5dp"
+                android:max="25"
+                android:paddingBottom="12dp"/>
+
+
+
+        <Button
+                android:id="@+id/button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="@+id/seekBar1"
+                android:layout_alignParentRight="true"
+                android:text="园饼圆圈"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <Button
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="@+id/button"
+                android:layout_alignParentRight="true"
+                android:text="图中间字"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="112dp"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="@+id/button1"
+                android:layout_alignParentRight="true"
+                android:text="图上文字"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="61dp"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <Button
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="@+id/button2"
+                android:layout_alignParentRight="true"
+                android:text="改变样子"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="164dp"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+                android:id="@+id/button4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="@+id/button3"
+                android:layout_alignParentRight="true"
+                android:text="指引文字"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="221dp"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
