@@ -47,7 +47,7 @@ class ChartFragment : BaseMainFragmet() {
     }
 
     override fun initData() {
-        setData(5,5f)
+        setData(4,4f)
         for (set in chart1.getData().getDataSets())
             set.setDrawValues(false)
         chart1.invalidate()
@@ -78,7 +78,7 @@ class ChartFragment : BaseMainFragmet() {
         chart1.setTransparentCircleRadius(55f) // 设置圆的半径
 
         chart1.setDrawCenterText(true)
-        chart1.setDrawEntryLabels(false)
+//        chart1.setDrawEntryLabels(false)
 
         chart1.setRotationAngle(0f)
         // enable rotation of the chart by touch
@@ -96,11 +96,11 @@ class ChartFragment : BaseMainFragmet() {
 
     private fun setData(count: Int, range: Float) {
 
-        val entries = ArrayList<PieEntry>()
-
+        val entries = ArrayList<PieEntry>()  //显示数据
         // NOTE: The order of the entries when being added to the entries array determines their position around the center of
         // the chart.
-        var parties : Array<String> = arrayOf("Party A","Party B","Party C","Party D","Party E")
+        var parties : Array<String> = arrayOf("10%","30%","40%","20%","Party E")
+
         for (i in 0 until count) {
             entries.add(PieEntry((Math.random() * range).toFloat() + range / 5, parties[i % parties.size]))
         }
@@ -112,24 +112,27 @@ class ChartFragment : BaseMainFragmet() {
         // add a lot of colors
 
         val colors = ArrayList<Int>()
-
-        for (c in ColorTemplate.VORDIPLOM_COLORS)
-//            colors.add(resources.getColor(R.color.bg_blue))
-            colors.add(c)
-
-        for (c in ColorTemplate.JOYFUL_COLORS)
-//            colors.add(resources.getColor(R.color.bg_receipt))
-            colors.add(c)
-
-        for (c in ColorTemplate.COLORFUL_COLORS)
-//            colors.add(resources.getColor(R.color.bg_cancel))
-            colors.add(c)
-
-
-        for (c in ColorTemplate.LIBERTY_COLORS)
-//            colors.add(resources.getColor(R.color.bg_yellow))
-            colors.add(c)
-
+        colors.add(resources.getColor(R.color.bg_blue))
+        colors.add(resources.getColor(R.color.bg_receipt))
+        colors.add(resources.getColor(R.color.bg_cancel))
+        colors.add(resources.getColor(R.color.bg_yellow))
+//        for (c in ColorTemplate.VORDIPLOM_COLORS)
+////            colors.add(resources.getColor(R.color.bg_blue))
+//            colors.add(c)
+//
+//        for (c in ColorTemplate.JOYFUL_COLORS)
+////            colors.add(resources.getColor(R.color.bg_receipt))
+//            colors.add(c)
+//
+//        for (c in ColorTemplate.COLORFUL_COLORS)
+////            colors.add(resources.getColor(R.color.bg_cancel))
+//            colors.add(c)
+//
+//
+//        for (c in ColorTemplate.LIBERTY_COLORS)
+////            colors.add(resources.getColor(R.color.bg_yellow))
+//            colors.add(c)
+//
 //        for (c in ColorTemplate.PASTEL_COLORS)
 //            colors.add(c)
 

@@ -15,16 +15,16 @@ import com.kotlin.app.lbl.base.BaseMainFragmet
  * A simple [Fragment] subclass.
  *
  */
-class Chart2Fragment : BaseMainFragmet() {
-
-    override fun getLayoutResources(): Int {
-        return R.layout.fragment_chart2
-    }
-
+class CharBottomTwoFragment :BaseMainFragmet() {
     override fun initView() {
     }
 
     override fun initData() {
     }
+
+    override fun getLayoutResources(): Int {
+        return R.layout.fragment_char_bottom_two
+    }
+
 
 }

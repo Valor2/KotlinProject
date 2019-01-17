@@ -21,8 +21,9 @@
     <color name="bg_cancel">#F78A7A</color>
     <color name="bg_yellow">#FDC243</color>
 
+    <color name="gray_dark">#999999</color>
 
 
-
+    <color name="color_f1f2f3">#f1f2f3</color>
 
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:background="@color/bg_fragment"
@@ -9,21 +10,53 @@
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:id="@+id/rl_layout"
+                        android:layout_height="288dp">
 
-        <android.support.v4.view.ViewPager
-                android:id="@+id/vp_content"
-                android:layout_width="match_parent"
-                android:layout_height="288dp"/>
 
-        <RelativeLayout android:layout_width="match_parent"
-                        android:layout_marginTop="@dimen/twenty"
-                        android:layout_below ="@+id/vp_content"
-                        android:background="@color/white"
-                        android:layout_height="match_parent">
-            <TextView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="111111"/>
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.kotlin.app.lbl.ui.view.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/eight"
+                    app:ci_background="@color/gray_dark"
+                    app:ci_selected_background="@color/white"
+                    app:ci_mode="outside"
+                    app:ci_gravity="center"
+                    app:ci_radius="3dp"
+                    app:ci_margin="5dp"/>
         </RelativeLayout>
+
+        <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_below="@+id/rl_layout"
+                android:background="@color/bg_fragment">
+
+            <android.support.v7.widget.CardView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="@dimen/ten">
+
+                <cn.youngkaaa.yviewpager.YViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        orientation="vertical"/>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
     </RelativeLayout>
 
 
