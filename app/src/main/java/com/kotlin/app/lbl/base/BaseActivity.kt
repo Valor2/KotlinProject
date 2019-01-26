@@ -42,6 +42,6 @@ abstract class BaseActivity : SupportActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        BaseApplication.getInstance().finisAllActivity()
+        BaseApplication.getInstance().finishActivity(this)
     }
 }

@@ -15,8 +15,6 @@ import java.util.*
 
 class PageActivity : BaseActivity() {
 
-
-
     var timer: Timer?=null
     var preferences by PreferencesUtil(Constants.IS_FIRST_TIME,false)
     var islogin by PreferencesUtil(Constants.IS_LOGIN,false)

@@ -29,6 +29,7 @@ open class PageFragment : Fragment() {
                     }else{
                         variable =true
                         startActivity(Intent(BaseApplication.getInstance().getContext(), MainActivity::class.java))
+
 //                        startActivity(Intent(AppUtils.context, LoginActivity::class.java))
                     }
                 }

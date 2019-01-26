@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.kotlin.app.lbl.BaseApplication
 import com.kotlin.app.lbl.R
 import com.kotlin.app.lbl.utils.ToastUtils
 import me.yokeyword.fragmentation.SupportFragment
@@ -60,6 +61,7 @@ abstract class BaseMainFragmet : SupportFragment() {
     override fun onBackPressedSupport(): Boolean {
         if (System.currentTimeMillis() - TOUCH_TIME < WAIT_TIME) {
             _mActivity.finish()
+            BaseApplication.getInstance().finisAllActivity()
         } else {
             TOUCH_TIME = System.currentTimeMillis()
             ToastUtils.shwoToast(_mActivity,getString(R.string.press_again_exit))
